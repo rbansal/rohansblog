@@ -1,93 +1,93 @@
 <!doctype html>
 <html>
-  <head>
-    <!link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title><%= title %></title>
+<head>
+	<!link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<title><%= title %></title>
 
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
-  </head>
-  <body>
+	<link href="/assets/css/bootstrap.css" rel="stylesheet">
+	<style>
+	body {
+		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body>
 	<div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Vaguely Vague</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Vaguely Vague</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
 
 	<div class="container-fluid">
-	  <div class="row-fluid">
+		<div class="row-fluid">
 			<div class="span4">
-			      <h3>Example with icons</h3>
-			      <p>Same example, but with <code>&lt;i&gt;</code> tags for icons.</p>
-			      <div class="well" style="padding: 8px 0;">
-			        <ul class="nav nav-list">
-			          <li class="nav-header">List header</li>
-			          <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
-			          <li><a href="#"><i class="icon-book"></i> Library</a></li>
-			          <li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
-			          <li class="nav-header">Another list header</li>
-			          <li><a href="#"><i class="icon-user"></i> Profile</a></li>
-			          <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
-			          <li class="divider"></li>
-			          <li><a href="#"><i class="icon-flag"></i> Help</a></li>
-			        </ul>
-			      </div> <!-- /well -->
-	      <!--Sidebar content-->
-	  </div>
-	    <div class="span8">
-	      <!--Body content-->
-	    <section>
-	      <%= yield %> 
-	    </section>
-	    </div>
-	</div>
-	<div class="container-fluid">
-	<div class="row-fluid">
-	  <div class="span12">
-	  	<footer>
-	      powered by a <a href="https://github.com/rbansal/rohansblog">fork</a> of Dorothy for <a href="http://cloudhead.io/toto">toto</a>
-	    </footer>
-	  </div>
-	</div>
-	</div>
+				<h3>Example with icons</h3>
+				<p>Same example, but with <code>&lt;i&gt;</code> tags for icons.</p>
+				<div class="well" style="padding: 8px 0;">
+					<ul class="nav nav-list">
+						<li class="nav-header">List header</li>
+						<li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+						<li><a href="#"><i class="icon-book"></i> Library</a></li>
+						<li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
+						<li class="nav-header">Another list header</li>
+						<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+						<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-flag"></i> Help</a></li>
+					</ul>
+				</div> <!-- /well -->
+				<!--Sidebar content-->
+			</div>
+			<div class="span8">
+				<!--Body content-->
+				<section>
+					<%= yield %> 
+				</section>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<footer>
+						powered by a <a href="https://github.com/rbansal/rohansblog">fork</a> of Dorothy for <a href="http://cloudhead.io/toto">toto</a>
+					</footer>
+				</div>
+			</div>
+		</div>
 
-	<!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap-transition.js"></script>
-    <script src="/assets/js/bootstrap-alert.js"></script>
-    <script src="/assets/js/bootstrap-modal.js"></script>
-    <script src="/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/assets/js/bootstrap-tab.js"></script>
-    <script src="/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/assets/js/bootstrap-popover.js"></script>
-    <script src="/assets/js/bootstrap-button.js"></script>
-    <script src="/assets/js/bootstrap-collapse.js"></script>
-    <script src="/assets/js/bootstrap-carousel.js"></script>
-    <script src="/assets/js/bootstrap-typeahead.js"></script>
-  </body>
-</html>
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="/assets/js/jquery.js"></script>
+		<script src="/assets/js/bootstrap-transition.js"></script>
+		<script src="/assets/js/bootstrap-alert.js"></script>
+		<script src="/assets/js/bootstrap-modal.js"></script>
+		<script src="/assets/js/bootstrap-dropdown.js"></script>
+		<script src="/assets/js/bootstrap-scrollspy.js"></script>
+		<script src="/assets/js/bootstrap-tab.js"></script>
+		<script src="/assets/js/bootstrap-tooltip.js"></script>
+		<script src="/assets/js/bootstrap-popover.js"></script>
+		<script src="/assets/js/bootstrap-button.js"></script>
+		<script src="/assets/js/bootstrap-collapse.js"></script>
+		<script src="/assets/js/bootstrap-carousel.js"></script>
+		<script src="/assets/js/bootstrap-typeahead.js"></script>
+	</body>
+	</html>
 
