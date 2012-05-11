@@ -1,18 +1,74 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title><%= title %></title>
+
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Vaguely Vague</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<div class="container-fluid">
+	  <div class="row-fluid">
+	    <div class="span2">
+	      <!--Sidebar content-->
+	    </div>
+	    <div class="span10">
+	      <!--Body content-->
+	    <section>
+	      <%= yield %> 
+	    </section>
+	    </div>
+	  </div>
+	</div>
+	
     <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
+      powered by a <a href="https://github.com/rbansal/rohansblog">fork</a> of Dorothy for <a href="http://cloudhead.io/toto">toto</a>
     </footer>
+
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-alert.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script>
   </body>
 </html>
 
